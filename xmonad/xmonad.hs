@@ -172,10 +172,10 @@ myMouseBindings (XConfig {XMonad.modMask = modm}) = M.fromList $
 mySpacing = spacingWithEdge 3
 myLayout =
   avoidStruts $
-    renamed [Replace "Spir"] (mySpacing (spiral (6 / 7)))
-    -- ||| renamed [Replace "Tall"] (mySpacing tall)
-    ||| renamed [Replace "Full"] (mySpacing Full)
+    renamed [Replace "Full"] (mySpacing Full)
+    ||| renamed [Replace "Spir"] (mySpacing (spiral (6 / 7)))
     ||| renamed [Replace "Wide"] (mySpacing (Mirror tall))
+    -- ||| renamed [Replace "Tall"] (mySpacing tall)
   where
     tall = ResizableTall 1 (3 / 100) (11 / 20) []
      -- The default number of windows in the master pane
