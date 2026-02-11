@@ -169,9 +169,9 @@ myMouseBindings (XConfig {XMonad.modMask = modm}) = M.fromList $
 ------------------------------------------------------------------------
 -- Layouts:
 
-mySpacing = spacingWithEdge 3
+mySpacing = spacingWithEdge 4
 myLayout =
-  avoidStruts $
+  smartBorders . avoidStruts $
     renamed [Replace "Full"] (mySpacing Full)
     ||| renamed [Replace "Spir"] (mySpacing (spiral (6 / 7)))
     ||| renamed [Replace "Wide"] (mySpacing (Mirror tall))
