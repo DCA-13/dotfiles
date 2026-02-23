@@ -31,7 +31,7 @@ myClickJustFocuses :: Bool
 myClickJustFocuses = False
 
 -- Width of the window border in pixels
-myBorderWidth = 2
+myBorderWidth = 3
 
 -- "windows key" is mod4Mask
 myModMask = mod4Mask
@@ -276,5 +276,8 @@ defaults = def {
     , ("<XF86AudioMute>"        , spawn "amixer set Master toggle")
     , ("<XF86AudioLowerVolume>" , spawn "amixer set Master 3dB-")
     , ("<XF86AudioRaiseVolume>" , spawn "amixer set Master 3dB+")
+    -- , ("<XF86AudioMute>"        , spawn "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle")
+    -- , ("<XF86AudioLowerVolume>" , spawn "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.05- -l 1")
+    -- , ("<XF86AudioRaiseVolume>" , spawn "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.05+ -l 1")
     ]
 
