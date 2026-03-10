@@ -239,6 +239,7 @@ myStartupHook = do
   spawnOnce "feh --bg-fill --no-fehbg ~/.wallpapers/emerald.svg"
   spawnOnce "nmcli connection up MIWIFI_AhaT passwd-file ~/passwd"
   spawnOnce "dunst"
+  spawnOnce "conky -c ~/.config/conkyrc"
 
 ------------------------------------------------------------------------
 
